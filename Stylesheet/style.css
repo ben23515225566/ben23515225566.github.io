@@ -129,9 +129,6 @@ strong{
 	overflow-y: auto;
 	scrollbar-width: none; /*隱藏scroll bar*/
 }
-.padding{
-	height: 100px;
-}
 .all{
 	display: flex;
 	height: 100%;
@@ -156,10 +153,18 @@ strong{
 	font-family: 'Noto Sans TC', sans-serif;
 	letter-spacing: 1px;
 }
+.items{
+	margin-bottom: 100px;
+}
 .side-menu li{
 	margin-top: 40px;
 }
+.side-menu ul li a{
+	display: block;
+	color: black;
+}
 .side-menu ul li a:hover{
+	cursor: pointer;
 	/*背景漸變*/
 	background: linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #09a8f4);
 	/*背景漸變色大小*/
@@ -182,6 +187,9 @@ strong{
 		/*背景位置*/
 		background-position: -400% 0;
 	}
+}
+.menu-item ul li a div{
+	display: none;
 }
 .findWithMe-button{
 	display: flex;

@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <!-- For font-awesome -->
     <script src="https://kit.fontawesome.com/6f146953a7.js" crossorigin="anonymous"></script>
+    <script src="./JS/javascript.js"></script>
     <title>CT's Website</title>
 </head>
 <body>
@@ -18,14 +19,23 @@
             <div class="menu-item border-red">
                 <img src="./Images/profilePhoto.jpg" alt="">
             </div>
-            <div class="menu-item border-red">
+            <div class="menu-item items border-red">
                 <ul>
-                    <li class="border-blue"><a href=""><i class="fa-solid fa-house"></i>&nbsp;&nbsp;HOME</a></li>
-                    <li class="border-blue"><a href=""><i class="fa-solid fa-briefcase"></i>&nbsp;&nbsp;RESUME</a></li>
-                    <li class="border-blue"><a href=""><i class="fa-solid fa-lightbulb"></i>&nbsp;&nbsp;OTHERS</a></li>
+                    <li class="border-blue"><a onclick="goTo('#HOME')"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;HOME</a></li>
+                    <li class="border-blue"><a onclick="goTo('#RESUME')"><i class="fa-solid fa-briefcase"></i>&nbsp;&nbsp;RESUME</a></li>
+                    <li class="border-blue">
+                        <a onmouseover="showChildMenu('#projectChildMenu')" onmouseout="hideChildMenu('#projectChildMenu')"><i class="fa-solid fa-bars-progress"></i>&nbsp;&nbsp;PROJECTS
+                            <div id="projectChildMenu">
+                                <ul>
+                                    <li onmouseover="changeColor(this, 'white')" onmouseout="changeColor(this, 'black')">HTML, CSS, JS</li>
+                                    <li onmouseover="changeColor(this, 'white')" onmouseout="changeColor(this, 'black')">Others</li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="border-blue"><a><i class="fa-solid fa-lightbulb"></i>&nbsp;&nbsp;TIPS</a></li>
                 </ul>
             </div>
-            <div class="padding border-red"></div>
             <div class="menu-item">
                 FIND WITH ME
             </div>
@@ -36,7 +46,7 @@
             </div>
         </div>
         <div class="content">
-            <div class="self-introduction">
+            <div id="HOME" class="self-introduction">
                 <div id="picture" class="self-introduction-item">
                     <img src="./Images/profilePhoto.jpg" alt="">
                 </div>
@@ -51,7 +61,7 @@
                     <a class="button shadow" href="mailto:ben23515225566@gmail.com" ><i class="fa-regular fa-envelope"></i>&nbsp;&nbsp;Contact me</a>
                 </div>
             </div>
-            <div class="resume border-red">
+            <div id="RESUME" class="resume border-red">
                 <div class="my-resume border-red">
                     <h4>My Resume</h4>
                 </div>
