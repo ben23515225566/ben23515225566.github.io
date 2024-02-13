@@ -51,6 +51,7 @@ table {
 *{
 	box-sizing: border-box;
 	text-decoration: none;
+	word-wrap: break-word;
 }
 p{
 	font-size: 18px;
@@ -155,6 +156,7 @@ strong{
 }
 .items{
 	margin-bottom: 100px;
+	width: 150px;
 }
 .side-menu li{
 	margin-top: 40px;

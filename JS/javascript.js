@@ -10,7 +10,6 @@ function showChildMenu(childMenu){
     var element = document.querySelector(childMenu);
     var items = element.querySelectorAll("li");
     element.style.display = "block";
-    element.style.color = "black";
     element.style.marginTop = "10px";
     items.forEach(item => {
         item.style.borderBottom = "1px solid black";
@@ -21,8 +20,4 @@ function showChildMenu(childMenu){
 
 function hideChildMenu(childMenu){
     document.querySelector(childMenu).style.display = "none";
-}
-
-function changeColor(element, color){
-    element.style.color = color;
 }
