@@ -55,8 +55,11 @@
         background-position: -400% 0;
     }
 }
-#projectChildMenu{
-    display: none;
+.hidden{
+ display: none;   
+}
+.lh{
+    line-height: 1.5;
 }
 .findWithMe-button{
     display: flex;
