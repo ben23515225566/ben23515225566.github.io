@@ -103,10 +103,18 @@
     </div>
 </body>
 <script src="./JS/javascript.js"></script>
-<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script>
+    fetch("/pages/sideMenu.html")
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("sideMenu").innerHTML = data;
+    })
+    .catch(error => console.log("Error fetching file: ", error));
+</script>
+<!-- <script src="./node_modules/jquery/dist/jquery.min.js"></script>
 <script>
     $(document).ready(function(){
         $("#sideMenu").load("./pages/sideMenu.html");
     });
-</script>
+</script> -->
 </html>
