@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./Stylesheet/style.css">
     <link rel="stylesheet" href="./Stylesheet/sideMenu.css">
     <link rel="icon" href="./Images/favicon.ico">
+    <!-- For google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
@@ -71,8 +72,8 @@
                         <div><h5>Job Expericence</h5></div>
                         <div class="resume-item-body shadow card-padding">
                             <div class="resume-item-body-header">
-                                <h6>臺灣大學</h6>
-                                <p>2024-09 ~ present</p>
+                                <h6>元大證券-資訊系統開發部</h6>
+                                <p>2023-07 ~ 2023-09 (Summer intern)</p>
                             </div>
                             <div class="resume-item-body-body">
                                 <p>就讀資訊管理研究所...etc Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempora minima ad repellendus ullam accusamus vitae tempore odit, veniam natus?</p>
@@ -80,8 +81,8 @@
                         </div>
                         <div class="resume-item-body shadow  card-padding">
                             <div class="resume-item-body-header">
-                                <h6>國立交通大學</h6>
-                                <p>2020-09 ~ 2024-06</p>
+                                <h6>Fintech camp</h6>
+                                <p>2023-01 ~ 2023-02</p>
                             </div>
                             <div class="resume-item-body-body">
                                 <p>就讀資訊管理與財務金融學系資管組...etc Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempora minima ad repellendus ullam accusamus vitae tempore odit, veniam natus?</p>
@@ -109,12 +110,6 @@
     .then(data => {
         document.getElementById("sideMenu").innerHTML = data;
     })
-    .catch(error => console.log("Error fetching file: ", error));
+    .catch(error => console.log("Error fetching sideMenu.html: ", error));
 </script>
-<!-- <script src="./node_modules/jquery/dist/jquery.min.js"></script>
-<script>
-    $(document).ready(function(){
-        $("#sideMenu").load("./pages/sideMenu.html");
-    });
-</script> -->
 </html>
