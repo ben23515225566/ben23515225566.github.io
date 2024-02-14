@@ -4,47 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Stylesheet/style.css">
+    <link rel="stylesheet" href="./Stylesheet/sideMenu.css">
     <link rel="icon" href="./Images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
     <!-- For font-awesome -->
     <script src="https://kit.fontawesome.com/6f146953a7.js" crossorigin="anonymous"></script>
-    <script src="./JS/javascript.js"></script>
     <title>CT's Website</title>
 </head>
 <body>
     <div class="all">
-        <div class="side-menu scroll">
-            <div class="menu-item border-red">
-                <img src="./Images/profilePhoto.jpg" alt="">
-            </div>
-            <div class="menu-item items border-red">
-                <ul>
-                    <li class="border-blue"><a onclick="goTo('#HOME')"><i class="fa-solid fa-house"></i>&nbsp;&nbsp;HOME</a></li>
-                    <li class="border-blue"><a onclick="goTo('#RESUME')"><i class="fa-solid fa-briefcase"></i>&nbsp;&nbsp;RESUME</a></li>
-                    <li class="border-blue" onmouseover="showChildMenu('#projectChildMenu')" onmouseout="hideChildMenu('#projectChildMenu')">
-                        <a><i class="fa-solid fa-bars-progress"></i>&nbsp;&nbsp;PROJECTS
-                            <div id="projectChildMenu">
-                                <ul>
-                                    <li ><a href="">HTML, CSS, JS</a></li>
-                                    <li ><a href="./combinatorial_calculator/calculator.html">Combination Calculator</a></li>
-                                </ul>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="border-blue"><a><i class="fa-solid fa-lightbulb"></i>&nbsp;&nbsp;TIPS</a></li>
-                </ul>
-            </div>
-            <div class="menu-item">
-                FIND WITH ME
-            </div>
-            <div class="findWithMe-button menu-item border-red">
-                <a  href="https://github.com/ben23515225566" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a ><i class="fa-regular fa-envelope"></i></a>
-                <a ><i class="fa-brands fa-linkedin-in"></i></a>
-            </div>
-        </div>
+        <div id="sideMenu"></div>
         <div class="content">
             <div id="HOME" class="self-introduction">
                 <div id="picture" class="self-introduction-item">
@@ -130,10 +101,12 @@
             </div>
         </div>
     </div>
-    <!-- <footer>
-        <div class="footerContent">
-            Copyright 2023 ben23515225566
-        </div>
-    </footer> -->
 </body>
+<script src="./JS/javascript.js"></script>
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#sideMenu").load("./pages/sideMenu.html");
+    });
+</script>
 </html>
