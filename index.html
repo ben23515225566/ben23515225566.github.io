@@ -3,114 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Stylesheet/reset.css">
-    <link rel="stylesheet" href="./Stylesheet/style.css">
-    <link rel="stylesheet" href="./Stylesheet/sideMenu.css">
     <link rel="icon" href="./Images/favicon.ico">
-    <!-- For google font -->
+    <link rel="stylesheet" href="./Stylesheet/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <!-- Google font start-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
-    <!-- For font-awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
+    <!-- Google font end-->
+    <!-- Font-awesome start-->
     <script src="https://kit.fontawesome.com/6f146953a7.js" crossorigin="anonymous"></script>
+    <!-- Font-awesome end -->
     <title>CT's Website</title>
 </head>
 <body>
-    <div class="all">
-        <div id="sideMenu"></div>
-        <div class="content">
-            <div id="HOME" class="self-introduction">
-                <div id="picture" class="self-introduction-item">
-                    <img src="./Images/profilePhoto.jpg" alt="">
-                </div>
-                <div id="introduction" class="self-introduction-item">
-                    <h4>Hi, Welcome to my page!</h4>
-                </div>
-                <div class="subtitle">
-                    I am a <strong>university student</strong>.
-                </div>
-                <div class="button-container border-red">
-                    <a class="button shadow" href="https://github.com/ben23515225566" target="_blank"><i class="fa-brands fa-github"></i>&nbsp;&nbsp;Github</a>
-                    <a class="button shadow" href="mailto:ben23515225566@gmail.com" ><i class="fa-regular fa-envelope"></i>&nbsp;&nbsp;Contact me</a>
-                </div>
-            </div>
-            <div id="RESUME" class="resume border-red">
-                <div class="my-resume border-red">
-                    <h4>My Resume</h4>
-                </div>
-                <div class="resume-content border-blue">
-                    <div class="resume-item border-green">
-                        <div><h5>Education</h5></div>
-                        <div class="resume-item-body shadow card-padding">
-                            <div class="resume-item-body-header">
-                                <h6>國立臺灣大學</h6>
-                                <p>2024-09 ~ present</p>
-                            </div>
-                            <div class="resume-item-body-body">
-                                <p>就讀資訊管理研究所...etc Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempora minima ad repellendus ullam accusamus vitae tempore odit, veniam natus?</p>
-                            </div>
-                        </div>
-                        <div class="resume-item-body shadow  card-padding">
-                            <div class="resume-item-body-header">
-                                <h6>國立交通大學</h6>
-                                <p>2020-09 ~ 2024-06</p>
-                            </div>
-                            <div class="resume-item-body-body">
-                                <p>就讀資訊管理與財務金融學系資管組...etc Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempora minima ad repellendus ullam accusamus vitae tempore odit, veniam natus?</p>
-                            </div>
-                        </div>
-                        <div class="resume-item-body shadow  card-padding">
-                            <div class="resume-item-body-header">
-                                <h6>新北市立板橋高級中學</h6>
-                                <p>2017-09 ~ 2019-06</p>
-                            </div>
-                            <div class="resume-item-body-body">
-                                <p>就讀資訊管理研究所...etc Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos tempora minima ad repellendus ullam accusamus vitae tempore odit, veniam natus?</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="resume-item border-green">
-                        <div><h5>Job Expericence</h5></div>
-                        <div class="resume-item-body shadow card-padding">
-                            <div class="resume-item-body-header">
-                                <h6>元大證券-資訊系統開發部</h6>
-                                <p>2023-07 ~ 2023-09 (Summer intern)</p>
-                            </div>
-                            <div class="resume-item-body-body">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio harum sint at quam. Facilis nostrum, saepe iure pariatur voluptatum aliquid.</p>
-                            </div>
-                        </div>
-                        <div class="resume-item-body shadow  card-padding">
-                            <div class="resume-item-body-header">
-                                <h6>Fintech camp</h6>
-                                <p>2023-01 ~ 2023-02</p>
-                            </div>
-                            <div class="resume-item-body-body">
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti vel neque perspiciatis deleniti, magni quis quo quae! Exercitationem, voluptate incidunt!</p>
-                            </div>
-                        </div>
-                        <div class="resume-item-body shadow  card-padding">
-                            <div class="resume-item-body-header">
-                                <h6>空白</h6>
-                                <p>To be continue...</p>
-                            </div>
-                            <div class="resume-item-body-body">
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo repellat pariatur consequuntur eaque quasi velit distinctio ea, accusamus quis nemo?</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a  class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  class="nav-link" onclick="Goto('#education')" role="button">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="Goto('#job_experience')" role="button">Job Expericence</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a  class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Projects</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a href="./pages/calculator.html">Combination Calculator</a></li>
+                            <li class="dropdown-item"><a href="">Line</a></li>
+                            <li class="dropdown-item"><a href="">Line</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a  class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Others</a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item"><a href="">Line</a></li>
+                            <li class="dropdown-item"><a href="">Line</a></li>
+                            <li class="dropdown-item"><a href="">Line</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
+    </nav>
+
+    <main id="content">
+        <div class="container-sm">
+            <div class="row d-flex justify-content-center pt-5">
+                <img id="myImage" src="./Images/profilePhoto.jpg" class="rounded-circle" alt="My Image">
+            </div>
+            <div class="row mt-3">
+                <div class="h1 text-center text-nowrap">Hi, welcome to my page !</div>
+            </div>
+            <div class="row mt-3">
+                <div class="h2 text-center">I'm a <code>university student</code></div>
+            </div>
+            <div class="row mt-3 pb-3 d-flex justify-content-center ">
+                <div class="col-sm-3 d-flex justify-content-center my-2"><a class="btn btn-secondary" href="https://github.com/ben23515225566" target="_blank"><i class="fa-brands fa-github"></i> Github</a></div>
+                <div class="col-sm-3 d-flex justify-content-center my-2"><a class="btn btn-secondary" href="mailto:ben23515225566@gmail.com"><i class="fa-regular fa-envelope"></i> Contact me</a></div>
+            </div>
+            <hr> <!-- split ----------------------------------------------------------------------------------------------------->
+            <div class="row mb-1">
+                <div id="education" class="h1">Education</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 my-2 d-flex align-items-stretch">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title h5"><strong>國立臺灣大學</strong></div>
+                            <div class="card-text border-bottom border-2 pb-3 mb-3">2024-09 ~ unknown</div>
+                            <div class="card-text">就讀資訊管理研究所 Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe praesentium eum esse repellendus non modi incidunt ipsam perspiciatis illo iusto!</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 my-2 d-flex align-items-stretch">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title h5"><strong>國立交通大學</strong></div>
+                            <div class="card-text border-bottom border-2 pb-3 mb-3">2020-09 ~ 2024-06</div>
+                            <div class="card-text">就讀資訊管理與財務金融學系資管組 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere corporis inventore eligendi qui nobis assumenda dolores harum rerum cupiditate quas.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 my-2 d-flex align-items-stretch">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title h5"><strong>板橋高級中學</strong></div>
+                            <div class="card-text border-bottom border-2 pb-3 mb-3">2017-09 ~ 2019-06</div>
+                            <div class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam exercitationem obcaecati ratione harum fuga impedit repellendus deserunt dolorum, beatae consequuntur.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr> <!-- split ----------------------------------------------------------------------------------------------------->
+            <div class="row mb-1">
+                <div id="job_experience" class="h1">Job Expericence</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 my-2 d-flex align-items-stretch">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title h5"><strong>元大證券-資訊系統開發部</strong></div>
+                            <div class="card-text border-bottom border-2 pb-3 mb-3">2023-07 ~ 2023-09<br>(Summer intern)</div>
+                            <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe praesentium eum esse repellendus non modi incidunt ipsam perspiciatis illo iusto!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr> <!-- split ----------------------------------------------------------------------------------------------------->
+
+        </div>
+    </main>
+    <script src="./JS/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
-<script src="./JS/javascript.js"></script>
-<script>
-    fetch("/pages/sideMenu.html")
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById("sideMenu").innerHTML = data;
-    })
-    .catch(error => console.log("Error fetching sideMenu.html: ", error));
-</script>
 </html>
